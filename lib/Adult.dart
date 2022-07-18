@@ -28,7 +28,7 @@ class _AdultState extends State<Adult> {
               new Expanded(
                 flex: 1,
                 child: new SingleChildScrollView(
-                    scrollDirection: Axis.vertical, //.horizontal
+                    scrollDirection: Axis.vertical, 
                     child: Column(
                       children: [
                         Text(

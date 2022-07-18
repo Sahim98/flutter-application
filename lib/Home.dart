@@ -24,11 +24,11 @@ class _HomeState extends State<Home> {
           child: ListView(
         children: [
           ListTile(
-            iconColor: Colors.green,
+            iconColor: Colors.teal,
             leading: Icon(Icons.medical_services),
             title: Text(
               'Choking',
-              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500),
             ),
             //subtitle: Text('Tap to view'),
             trailing: Icon(Icons.keyboard_arrow_right),
@@ -40,11 +40,11 @@ class _HomeState extends State<Home> {
             },
           ),
           ListTile(
-            iconColor: Colors.green,
+            iconColor: Colors.teal,
             leading: Icon(Icons.medical_services),
             title: Text(
               'Acid Attack',
-              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500),
             ),
             //subtitle: Text('Tap to view'),
             trailing: Icon(Icons.keyboard_arrow_right),
@@ -56,11 +56,11 @@ class _HomeState extends State<Home> {
             },
           ),
           ListTile(
-            iconColor: Colors.green,
+            iconColor: Colors.teal,
             leading: Icon(Icons.medical_services),
             title: Text(
               'Burning',
-              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500),
             ),
             //subtitle: Text('Tap to view'),
             trailing: Icon(Icons.keyboard_arrow_right),
@@ -72,11 +72,11 @@ class _HomeState extends State<Home> {
             },
           ),
           ListTile(
-            iconColor: Colors.green,
+            iconColor: Colors.teal,
             leading: Icon(Icons.medical_services),
             title: Text(
               'Head Injury',
-              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500),
             ),
             //subtitle: Text('Tap to view'),
             trailing: Icon(Icons.keyboard_arrow_right),
@@ -88,11 +88,11 @@ class _HomeState extends State<Home> {
             },
           ),
           ListTile(
-            iconColor: Colors.green,
+            iconColor: Colors.teal,
             leading: Icon(Icons.medical_services),
             title: Text(
               'Stroke',
-              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500),
             ),
             //subtitle: Text('Tap to view'),
             trailing: Icon(Icons.keyboard_arrow_right),

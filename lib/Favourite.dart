@@ -33,6 +33,7 @@ class Favourite extends StatelessWidget {
   @override
   Widget build(BuildContext context) => new Scaffold(
       floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.teal,
         elevation: 20,
         onPressed: () {
           _sendSMS(message, recipients);
@@ -42,7 +43,7 @@ class Favourite extends StatelessWidget {
       appBar: new AppBar(
         title: const Text("Call now"),
         leading: Icon(Icons.call),
-        backgroundColor: Colors.green[300],
+        backgroundColor: Colors.teal,
       ),
       body: ListView.builder(itemBuilder: itemBuilder, itemCount: name.length));
 
@@ -51,9 +52,10 @@ class Favourite extends StatelessWidget {
       padding: const EdgeInsets.all(10.0),
       child: Card(
         elevation: 10,
+        shadowColor: Colors.grey[800],
         shape: RoundedRectangleBorder(
           side: BorderSide(
-            color: Colors.green.shade300,
+            color: Colors.transparent,
           ),
           borderRadius: BorderRadius.circular(15.0),
         ),
@@ -65,8 +67,10 @@ class Favourite extends StatelessWidget {
             style: TextStyle(fontSize: 20),
           ),
           subtitle: Text("Call now"),
+          leading: Icon(Icons.account_circle_rounded, color: Colors.teal),
           trailing: Icon(
             Icons.call,
+            color: Colors.teal,
           ),
           onTap: () => launch('tel:+88${recipients[index]}'),
         ),

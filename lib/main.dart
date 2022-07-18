@@ -75,7 +75,7 @@ class _MyAppState extends State<MyApp> {
                 icon: Icon(Icons.call),
                 label: 'HelpLine'),
             BottomNavigationBarItem(
-                backgroundColor: Colors.green[300],
+                backgroundColor: Colors.teal,
                 icon: Icon(Icons.add_call),
                 label: 'Favourite'),
           ],

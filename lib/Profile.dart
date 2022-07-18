@@ -97,6 +97,46 @@ class _ProfileState extends State<Profile> {
                     ),
                   )
                 ],
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              Row(
+                children: [
+                  TextButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => Input()),
+                      );
+                    },
+                    child: Card(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(18),
+                      ),
+                      margin: EdgeInsets.all(15.0),
+                      shadowColor: Colors.grey,
+                      color: Colors.blue,
+                      elevation: 10,
+                      child: Padding(
+                        padding: const EdgeInsets.all(10.0),
+                        child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Icon(Icons.person_add, color: Colors.green),
+                              SizedBox(
+                                width: 10,
+                              ),
+                              Text('Recently  added',
+                                  style: TextStyle(color: Colors.white)),
+                              SizedBox(
+                                width: 5,
+                              ),
+                            ]),
+                      ),
+                    ),
+                  )
+                ],
               )
             ],
           ),
