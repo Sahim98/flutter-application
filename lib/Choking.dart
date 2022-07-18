@@ -13,7 +13,8 @@ class _ChokingState extends State<Choking> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          shadowColor: Colors.transparent,
+          shadowColor: Colors.grey,
+          backgroundColor: Colors.black,
           leading: IconButton(
             icon: Icon(Icons.arrow_back),
             onPressed: () {
@@ -28,7 +29,6 @@ class _ChokingState extends State<Choking> {
             child: Column(children: [
               Container(
                 height: MediaQuery.of(context).size.height / 3,
-                
                 child: Center(
                   child: Container(
                     height: 100,
@@ -38,16 +38,19 @@ class _ChokingState extends State<Choking> {
                         borderRadius: BorderRadius.circular(20.0),
                       ),
                       child: ListTile(
-                        leading: Icon(Icons.read_more),
+                        leading: Icon(
+                          Icons.info_outline,
+                          color: Colors.teal,
+                        ),
                         title: Text(
                           'Adult/Child',
                           style: TextStyle(fontSize: 25),
                         ),
                         onTap: () {
-                           Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => Adult()),
-                    );
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => Adult()),
+                          );
                         },
                         // style: ListTileStyle(),
                       ),
@@ -59,7 +62,6 @@ class _ChokingState extends State<Choking> {
               //     alignment: Alignment.center, padding: EdgeInsets.all(100)),
               Container(
                 height: MediaQuery.of(context).size.height / 3,
-                
                 child: Center(
                   child: Container(
                     height: 100,
@@ -69,7 +71,10 @@ class _ChokingState extends State<Choking> {
                         borderRadius: BorderRadius.circular(20.0),
                       ),
                       child: ListTile(
-                        leading: Icon(Icons.read_more),
+                        leading: Icon(
+                          Icons.info_outline,
+                          color: Colors.teal,
+                        ),
                         title: Text(
                           'Infant',
                           style: TextStyle(fontSize: 25),

@@ -12,6 +12,7 @@ class _AdultState extends State<Adult> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
+          backgroundColor: Colors.black,
           leading: IconButton(
             icon: Icon(Icons.arrow_back),
             onPressed: () {
@@ -29,13 +30,15 @@ class _AdultState extends State<Adult> {
                 flex: 1,
                 child: new SingleChildScrollView(
                     scrollDirection: Axis.vertical, 
-                    child: Column(
+                            child: Padding(
+                              padding: const EdgeInsets.all(10.0),
+                              child: Column(
                       children: [
                         Text(
                           '1.  Ask the casuality, Are you Choking?',
                           style: TextStyle(
-                            color: Colors.black,
-                            fontSize: 30,
+                              color: Colors.black,
+                              fontSize: 30,
                           ),
                         ),
                         SizedBox(
@@ -44,12 +47,13 @@ class _AdultState extends State<Adult> {
                         Text(
                           '2. Encourage the casuality to cough.',
                           style: TextStyle(
-                            color: Colors.black,
-                            fontSize: 30,
+                              color: Colors.black,
+                              fontSize: 30,
                           ),
                         ),
                       ],
-                    )),
+                    ),
+                            )),
               ),
             ],
           ),

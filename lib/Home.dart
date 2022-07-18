@@ -18,7 +18,7 @@ class _HomeState extends State<Home> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Home'),
-        backgroundColor: Colors.blue[300],
+        backgroundColor: Colors.teal,
       ),
       body: Container(
           child: ListView(

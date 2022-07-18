@@ -54,7 +54,7 @@ class _MyAppState extends State<MyApp> {
                 Icons.home,
               ),
               label: 'Home',
-              backgroundColor: Colors.blue[300],
+              backgroundColor: Colors.teal,
             ),
             BottomNavigationBarItem(
               icon: Icon(
@@ -68,7 +68,7 @@ class _MyAppState extends State<MyApp> {
                 Icons.person,
               ),
               label: 'Profile',
-              backgroundColor: Colors.cyan[200],
+              backgroundColor: Colors.redAccent,
             ),
             BottomNavigationBarItem(
                 backgroundColor: Colors.purple[300],

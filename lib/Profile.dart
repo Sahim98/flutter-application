@@ -13,7 +13,7 @@ class _ProfileState extends State<Profile> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          backgroundColor: Colors.cyan[200],
+          backgroundColor: Colors.redAccent,
           leading: IconButton(
             icon: Icon(Icons.arrow_back),
             onPressed: () {
@@ -54,11 +54,8 @@ class _ProfileState extends State<Profile> {
                               SizedBox(
                                 width: 10,
                               ),
-                              Text('Add Contact',
+                              Text('Add',
                                   style: TextStyle(color: Colors.white)),
-                              SizedBox(
-                                width: 5,
-                              ),
                             ]),
                       ),
                     ),
@@ -87,11 +84,8 @@ class _ProfileState extends State<Profile> {
                               SizedBox(
                                 width: 10,
                               ),
-                              Text('Delete Contact',
+                              Text('Delete',
                                   style: TextStyle(color: Colors.white)),
-                              SizedBox(
-                                width: 5,
-                              ),
                             ]),
                       ),
                     ),
@@ -127,7 +121,7 @@ class _ProfileState extends State<Profile> {
                               SizedBox(
                                 width: 10,
                               ),
-                              Text('Recently  added',
+                              Text('Recent',
                                   style: TextStyle(color: Colors.white)),
                               SizedBox(
                                 width: 5,

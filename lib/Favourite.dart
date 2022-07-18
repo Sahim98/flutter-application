@@ -61,7 +61,7 @@ class Favourite extends StatelessWidget {
         ),
         child: ListTile(
           dense: true,
-          iconColor: Colors.green,
+          iconColor: Colors.teal,
           title: Text(
             name[index],
             style: TextStyle(fontSize: 20),
