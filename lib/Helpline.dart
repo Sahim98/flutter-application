@@ -62,13 +62,13 @@ class Helpline extends StatelessWidget {
             name[index],
             style: TextStyle(fontSize: 20),
           ),
-          subtitle: Text("Call now"),
+          subtitle: Text(recipients[index]),
           leading: Icon(Icons.account_circle_rounded, color: Colors.purple),
           trailing: Icon(
             Icons.call,
             color: Colors.purple,
           ),
-          onTap: () => launch('tel:+88${recipients[index]}'),
+          onTap: () => launch('tel:${recipients[index]}'),
         ),
       ),
     );
