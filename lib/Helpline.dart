@@ -1,28 +1,74 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_phone_direct_caller/flutter_phone_direct_caller.dart';
+import 'package:url_launcher/url_launcher.dart' as UrlLauncher;
+import 'package:flutter_sms/flutter_sms.dart';
+import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
-class Helpline extends StatefulWidget {
-  const Helpline({Key? key}) : super(key: key);
+List<String> recipients = [
+  '999',
+  '999',
+  '999',
+  '100',
+  '101',
+  '102',
+  '789',
+  '16263',
+  '1090',
+];
+
+List name = [
+  'Police',
+  'Fire Service',
+  'Ambulance Service',
+  'Bangladesh Police Helpdesk',
+  'RAB Helpdesk',
+  'Fire Service Hotline',
+  'GrameenPhone Doctor',
+  'Govt. Health Call Centre',
+  'Disaster Warning In Advance'
+];
+
+class Helpline extends StatelessWidget {
+  Helpline({Key? key}) : super(key: key);
+
+  final _controller = TextEditingController();
 
   @override
-  State<Helpline> createState() => _HelplineState();
-}
-
-class _HelplineState extends State<Helpline> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('HelpLine'),
-        backgroundColor: Colors.purple[300],
+  Widget build(BuildContext context) => new Scaffold(
+      appBar: new AppBar(
+        title: const Text("Call now"),
+        leading: Icon(Icons.call),
+        backgroundColor: Colors.purple,
       ),
-      body: Padding(
-        padding: const EdgeInsets.all(15.0),
-        child: Container(
-          child: Text('Processing...',
-              style: TextStyle(
-                  fontSize: 30,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.black.withOpacity(0.5))),
+      body: ListView.builder(itemBuilder: itemBuilder, itemCount: name.length));
+
+  Widget itemBuilder(BuildContext context, int index) {
+    return Padding(
+      padding: const EdgeInsets.all(10.0),
+      child: Card(
+        elevation: 10,
+        shadowColor: Colors.grey[800],
+        shape: RoundedRectangleBorder(
+          side: BorderSide(
+            color: Colors.transparent,
+          ),
+          borderRadius: BorderRadius.circular(15.0),
+        ),
+        child: ListTile(
+          dense: true,
+          iconColor: Colors.purple,
+          title: Text(
+            name[index],
+            style: TextStyle(fontSize: 20),
+          ),
+          subtitle: Text("Call now"),
+          leading: Icon(Icons.account_circle_rounded, color: Colors.purple),
+          trailing: Icon(
+            Icons.call,
+            color: Colors.purple,
+          ),
+          onTap: () => launch('tel:+88${recipients[index]}'),
         ),
       ),
     );
