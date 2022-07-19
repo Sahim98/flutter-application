@@ -1,6 +1,6 @@
-# flutter_application_1
+## **Flutter_application_1**
 
-A new Flutter project.
+_A Flutter project as a part of software engineering course._
 
 ## Getting Started
 
@@ -15,10 +15,35 @@ For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
 
-git add .
 
+Technology used:
+
+<div id="header" align="center">
+  <img src="https://media.giphy.com/media/M9gbBd9nbDrOTu1Mqx/giphy.gif" width="100"/>
+</div>
+
+
+<div id="badges" align = "center">
+  <a href="https://flutter.dev/?gclid=Cj0KCQjwidSWBhDdARIsAIoTVb1hFezjDm0JJtHWNxz4pIUygGkz3Y5muVXzJwC9MNA7lUVN-xqDlNsaAmOyEALw_wcB&gclsrc=aw.ds">
+    <img src="https://img.shields.io/badge/Flutter-blue?style=for-the-badge&logo=flutter&logoColor=white" alt="Flutter Badge"/>
+  </a>
+  <a href="https://dart.dev/guides">
+     <img src="https://img.shields.io/badge/Dart-red?style=for-the-badge&logo=dart&logoColor=white" alt="Dart Badge"/>
+  </a>
+</div>
+
+![](https://komarev.com/ghpvc/?username=Sahim98)
+
+<h1>
+  hey there
+  <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30px"/>
+</h1>
+
+Some basic Git commands are:
+```
+git status
+git add
 git commit -m "text is needed"
-
-git push
+```
 
 
