@@ -32,7 +32,17 @@ Technology used:
   </a>
 </div>
 
-![](https://komarev.com/ghpvc/?username=Sahim98)
+## Features:
+- *Map*
+- *Multiple Messaging System*
+- *HelpLine Services*
+- *First Aaid Guide(Text,Video,Image)*
+- *Add/Delete Favourite Contacts*
+- *Call Services*
+
+## Live App Demo
+
+Coming Soon...
 
 <h1>
   hey there
