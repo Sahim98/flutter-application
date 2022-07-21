@@ -44,8 +44,9 @@ samples, guidance on mobile development, and a full API reference.
 - *Call Services*
 
 ## Live App Demo
-
-Coming Soon...
+<div id="header" align="center">
+  <img src="https://media.giphy.com/media/iTWomlMFQXIA5DN0VZ/giphy.gif" width="200"/>
+</div>
 
 <h1>
   hey there
