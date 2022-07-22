@@ -55,9 +55,9 @@ samples, guidance on mobile development, and a full API reference.
 
 Some basic Git commands are:
 ```
-git status
-git add
+git add .
 git commit -m "text is needed"
+git push
 ```
 
 
