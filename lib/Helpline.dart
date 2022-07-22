@@ -43,7 +43,7 @@ class Helpline extends StatelessWidget {
       appBar: new AppBar(
         title: const Text("Call now"),
         leading: Icon(Icons.call),
-        backgroundColor: Colors.purple,
+        backgroundColor: Colors.purple[300],
       ),
       body: ListView.builder(itemBuilder: itemBuilder, itemCount: name.length));
 
