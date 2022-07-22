@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 List<String> recipients = [
-  '16121'
+  '16121',
   '999',
   '999',
   '999',
@@ -29,8 +29,8 @@ List name = [
   'Fire Service Hotline',
   'GrameenPhone Doctor',
   'Govt. Health Call Centre',
-  'Disaster Warning In Advance'
-  'National Legal Aid Services Hotline'
+  'Disaster Warning In Advance',
+  'National Legal Aid Services',
 ];
 
 class Helpline extends StatelessWidget {
