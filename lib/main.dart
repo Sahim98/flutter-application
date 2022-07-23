@@ -6,11 +6,12 @@ import 'package:flutter_application_1/Choking.dart';
 import 'package:flutter_application_1/Favourite.dart';
 import 'package:flutter_application_1/HeadInjury.dart';
 import 'package:flutter_application_1/Helpline.dart';
+import 'package:flutter_application_1/Home.dart';
 import 'package:flutter_application_1/Map.dart';
 import 'package:flutter_application_1/Stroke.dart';
+import 'package:flutter_application_1/animation.dart';
 import 'package:flutter_application_1/drawer.dart';
 import 'package:liquid_swipe/liquid_swipe.dart';
-import 'Home.dart';
 import 'Profile.dart';
 
 void main(List<String> args) {
@@ -26,7 +27,7 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   int curr = 0;
-  List ls = [Home(), map(), Profile(), Helpline(), Favourite()];
+  List ls = [situation(), map(), Profile(), Helpline(),notification()];
   void onPageChanged(int page) {
     setState(() {
       curr = page;

@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_phone_direct_caller/flutter_phone_direct_caller.dart';
 import 'package:url_launcher/url_launcher.dart' as UrlLauncher;
 import 'package:flutter_sms/flutter_sms.dart';
-import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 List<String> recipients = [
@@ -25,8 +24,8 @@ void _sendSMS(String message, List<String> recipents) async {
   print(_result);
 }
 
-class Favourite extends StatelessWidget {
-  Favourite({Key? key}) : super(key: key);
+class notification extends StatelessWidget {
+  notification({Key? key}) : super(key: key);
 
   final _controller = TextEditingController();
 

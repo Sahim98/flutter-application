@@ -5,14 +5,14 @@ import 'package:flutter_application_1/Choking.dart';
 import 'package:flutter_application_1/HeadInjury.dart';
 import 'package:flutter_application_1/Stroke.dart';
 
-class Home extends StatefulWidget {
-  const Home({Key? key}) : super(key: key);
+class situation extends StatefulWidget {
+  const situation({Key? key}) : super(key: key);
 
   @override
-  State<Home> createState() => _HomeState();
+  State<situation> createState() => _situationState();
 }
 
-class _HomeState extends State<Home> {
+class _situationState extends State<situation> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
